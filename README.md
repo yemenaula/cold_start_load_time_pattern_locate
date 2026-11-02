@@ -1,11 +1,11 @@
-# realtimedw_jd418
+# cold_start_load_time_pattern_locate
 
 **用规则在实时数仓架构师·冷启动与模型加载时间里定位可疑位置。**
 
-`realtimedw_jd418` —— 用一组明示的正则规则扫描输入，报告实时数仓架构师·冷启动与模型加载时间相关的命中行与片段
+`cold_start_load_time_pattern_locate` —— 用一组明示的正则规则扫描输入，报告实时数仓架构师·冷启动与模型加载时间相关的命中行与片段
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`realtimedw_jd418.py` 拷走就能用
+- 单文件，`cold_start_load_time_pattern_locate.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install yemenaula-realtimedw_jd418
+pip install yemenaula-cold_start_load_time_pattern_locate
 ```
 
 装完直接用命令名调用：
 
 ```bash
-realtimedw_jd418 --help
+cold_start_load_time_pattern_locate --help
 ```
 
-也可以不用安装，直接把 `realtimedw_jd418.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `cold_start_load_time_pattern_locate.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ realtimedw_jd418 --help
 ## 用法
 
 ```bash
-python realtimedw_jd418.py --file input.txt
-python realtimedw_jd418.py --text "示例内容"
-python realtimedw_jd418.py --file input.txt --json
+python cold_start_load_time_pattern_locate.py --file input.txt
+python cold_start_load_time_pattern_locate.py --text "示例内容"
+python cold_start_load_time_pattern_locate.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python realtimedw_jd418.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_realtimedw_jd418.py
+python test_cold_start_load_time_pattern_locate.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_realtimedw_jd418.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/yemenaula/realtimedw_jd418>
+- GitHub 仓库：<https://github.com/yemenaula/cold_start_load_time_pattern_locate>
 
 ---
 
@@ -79,7 +79,7 @@ python test_realtimedw_jd418.py
 yemenaula 做实时数仓架构师·冷启动与模型加载时间相关的问题，方向对标月之暗面的实习实时数仓架构师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://yemenaula.github.io>
-- 仓库：<https://github.com/yemenaula/realtimedw_jd418>
+- 仓库：<https://github.com/yemenaula/cold_start_load_time_pattern_locate>
 
 ## 许可
 
